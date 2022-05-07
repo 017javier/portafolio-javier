@@ -1,0 +1,104 @@
+@use '../globales' as *;
+
+.footer{
+    background-color: var(--color-claro);
+    .container{
+        padding-bottom: 1.6rem;
+    }
+    .titulos{
+        text-align: center;
+        padding-bottom: 10rem;
+        color: var(--color-oscuro);
+    }
+    &__h4{
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 1.6rem;
+        color: var(--color-oscuro);
+    }
+    &__contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        background-color: var(--color-claro);
+    }
+    form{
+        width: 60%;
+        margin: auto;
+        padding: 1rem;
+        border: 1px solid var(--color-oscuro);
+    }
+
+    &__grupo{
+        margin-bottom: 1rem;
+    }
+    &__control{
+        display: block;
+        width: 100%;
+        padding: 7px 12px ;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: var(--color-oscuro);
+        border: 1px solid var(--color-amarillo);
+    }
+    &__row{
+        display: flex;
+    }
+
+    &__row input:first-child {
+        margin-right: 2rem;
+    }
+    &__grupo input, textarea{
+        border: .5px solid var(--color-oscuro);
+        &:focus{
+            background-color: var(--color-claro);
+            color: #fff;
+            &::placeholder{
+                color: var(--color-claro);
+            }
+        }
+    }
+
+    
+    textarea{
+        width: 100%;
+        height: 15rem;
+        resize: none;
+    }
+        
+    &__redes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__a{
+        color: #fff;
+        font-size: 4rem;
+        margin: 2rem;
+        font-weight: bold;
+        &:hover{
+            color: var(--color-oscuro);
+        }
+    }
+    &__pie{
+        display: flex;
+        justify-content: center;
+    }
+    &__copy{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 968px){
+    .footer{
+        &__h4{
+            font-size: 2rem;
+        }
+        form{
+            width: 100%;
+            margin: 2rem;
+            
+        }
+    }
+}

@@ -1,0 +1,106 @@
+@use '../globales' as *;
+
+.hero{
+    background-image: repeating-linear-gradient(45deg, var(--color-gris) 0, var(--color-gris) 0.5px, transparent 0, transparent 50%);
+    background-size: 12px 12px;
+    background-color: #fff;
+    .container{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        align-items: center;
+        padding: 3rem;
+    }
+    &__texto{
+        padding: 1.5rem;
+        .hero__h1{
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--color-oscuro);
+        }
+        .hero__h3{
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--color-oscuro);
+        }
+        .hero__p{
+            color: var(--color-oscuro);
+            text-align: center;
+        }
+        .hero__buttons{
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__img{
+        width: 100%;
+    }
+    &__img-portada{
+        object-fit: cover;
+        bottom: 100px;
+        width: 100%;
+        z-index: -1;
+    }
+}
+@media (max-width: 720px) {
+    .hero{
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            align-items: center;
+            padding: 1rem;
+        }
+        &__texto{
+            padding: 1.5rem;
+            .hero__buttons{
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .hero{
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            align-items: center;
+            padding: 0;
+            
+        }
+        &__texto{
+            padding: 2rem;
+            .hero__h3{
+                font-size: 2rem;
+            }
+            .hero__buttons{
+                padding-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .hero{
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+            align-items: center;
+            padding: 0;
+        }
+        &__texto{
+            padding: 1rem;
+            
+        }
+        
+    }
+}

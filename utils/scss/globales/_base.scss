@@ -1,0 +1,86 @@
+@use '../fuente' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: var(--color-gris-claro);
+    }
+    &::-webkit-scrollbar-thumb{
+        background: var(--color-claro) ;
+        border-radius: 5rem;
+    }
+}
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: $fuente;
+    transition: all .5s linear;
+    
+}
+h1,
+h2,
+h3{
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+h1{
+    font-size: 7rem;
+
+    @include breakpoint-down(medium){
+        font-size: 4rem;
+    }
+    
+}
+
+a,
+a:visited,
+a:active{
+    text-decoration: none;
+}
+a{
+    font-size: 2rem;
+}
+p{
+    font-size: 2rem;
+
+    @include breakpoint-down(small){
+        font-size: 1.6rem;
+    }
+}
+img{
+    max-width:100%;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.titulos{
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 100px;
+    color: var(--color-oscuro);
+
+    @include breakpoint-down(medium){
+        font-size: 3.5rem;
+    }
+    @include breakpoint-down(small){
+        font-size: 2.5rem;
+    }
+}

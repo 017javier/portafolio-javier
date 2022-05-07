@@ -1,0 +1,65 @@
+@use '../globales' as *;
+
+.blog{
+    background-image: repeating-linear-gradient(45deg, var(--color-gris) 0, var(--color-gris) 0.5px, transparent 0, transparent 50%);
+    background-size: 12px 12px;
+    background-color: #fff;
+    .container{
+        padding-bottom: 150px;
+    }
+    
+    &__contenedor{
+        max-width: 1400px;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+    &__card{
+        width: 45rem;
+        height: max-content;
+        border: 1px solid var(--color-claro);
+        background-color: #fff;
+    }
+    &__img{
+        width: 100%;
+        height: 60%;
+        
+    }
+    &__texto{
+        margin: 1.5rem;
+    }
+    &__h3,
+    &__fecha,
+    &__p,
+    &__leer{
+        margin-bottom: 2rem;
+    }
+    &__h3{
+        font-size: 2rem;
+        color: var(--color-claro);
+        &:hover{
+            color: var(--color-oscuro);
+        }
+    }
+    &__fecha{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    &__leer{
+        text-align: right;
+        font-weight: bold;
+        a{
+            color: var(--color-oscuro);
+        }
+    }
+}
+@media (max-width: 600px){
+    .blog{
+        
+        &__contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

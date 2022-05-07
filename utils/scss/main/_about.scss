@@ -1,0 +1,68 @@
+@use '../globales' as *;
+
+.about{
+    background-image: repeating-linear-gradient(45deg, var(--color-gris) 0, var(--color-gris) 0.5px, transparent 0, transparent 50%);
+    background-size: 12px 12px;
+    background-color: #fff;
+    .container{
+        padding-bottom: 150px;
+    }
+    
+    &__contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__perfil{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    &__img{
+        max-width: 90%;
+    }
+    
+    &__texto{
+        width: 90%;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    &__p{
+        
+        padding: 20px 0;
+        color:#000;
+        margin: 20px;
+    }
+    &__skill{
+        width: 100%;
+        display: flex;
+        background-color: var(--color-claro);
+        justify-content: space-around;
+
+        &--icon{
+            font-size: 1.8rem;
+            color: var(--color-naranja);
+            margin-right: 15px;
+        }
+    }
+    &__skills{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+    &__h4{
+        font-size: 1.5rem;
+
+    }
+
+}
+@media (max-width: 1080px){
+    .about{
+        &__contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+        }
+    }
+}
