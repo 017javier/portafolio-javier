@@ -8,14 +8,14 @@
     .titulos{
         text-align: center;
         padding-bottom: 10rem;
-        color: var(--color-oscuro);
+        color: #fff;
     }
     &__h4{
         font-weight: bold;
         font-size: 2.5rem;
         text-align: center;
         padding-bottom: 1.6rem;
-        color: var(--color-oscuro);
+        color: #fff;
     }
     &__contenedor{
         display: flex;
@@ -88,6 +88,7 @@
     &__copy{
         text-align: center;
         font-size: 1.3rem;
+        color: #fff;
     }
 }
 @media (max-width: 968px){
