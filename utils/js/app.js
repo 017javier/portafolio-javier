@@ -16,3 +16,32 @@ window.onscroll = () =>{
         document.querySelector('.header .navbar').classList.remove('active');
     }
 }
+
+// animation
+const sr = ScrollReveal({
+    reset: false,
+    distance: '60px',
+    duration: 2500,
+    delay: 300
+});
+
+sr.reveal('.header__menu, .header__links, .header__social--icon', {
+    delay: 300,
+    origin: 'top',
+    interval: 300
+});
+sr.reveal('.hero__h1, .hero__h3, .hero__p, .hero__buttons', {
+    delay: 2000,
+    origin: 'left',
+    interval: 400
+});
+sr.reveal('.hero__img', {
+    delay: 1000,
+    origin: 'rigth',
+    interval: 400
+});
+sr.reveal('.titulos', {
+    delay: 300,
+    origin: 'left',
+    interval: 200
+});
