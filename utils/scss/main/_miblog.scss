@@ -1,0 +1,40 @@
+@use '../globales' as *;
+
+.miblog{
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__p{
+        text-align: center;
+        padding-bottom: 2rem;
+        margin: 2rem;
+    }
+    &__bga{
+        background-color: var(--color-amarillo);
+        height: 6rem;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        padding-left:1rem ;
+        h3{
+            color: var(--color-claro);
+        }
+    }
+    &__bgb{
+        background-color: var(--color-claro);
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        &:hover{
+            background-color: var(--color-azul);
+        }
+        p{
+            color: var(--color-amarillo);
+            padding: 1rem;
+        }
+    }
+}

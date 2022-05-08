@@ -54,6 +54,11 @@ a:active{
 }
 a{
     font-size: 2rem;
+    color: #fff;
+
+    @include breakpoint-down(small){
+        font-size: 1.6rem;
+    }
 }
 p{
     font-size: 2rem;
