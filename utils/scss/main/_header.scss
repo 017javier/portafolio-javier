@@ -6,13 +6,13 @@
     top: 0;
     position: sticky;
     display: flex;
-    z-index: 99;
+    z-index: 100;
 
     &__nav{
         display: flex;
         justify-content: space-between;
         height: 10rem;
-        z-index: 1;
+        z-index: 100;
         width: 100%;
         max-width: 1400px;
         margin: 0 auto;
@@ -23,6 +23,7 @@
         align-items: center;
         list-style: none;
         text-align: center;
+        z-index: 90;
     }
     &__item{
         height: 3.25rem;
@@ -36,7 +37,7 @@
         text-decoration: none;
         height: 100%;
         font-size: 1.7rem;
-        padding: 0 15px;
+        padding: 0 1.5rem;
         &:hover{
             color: #fff;
             transition: all 0.3s ease;
@@ -47,7 +48,7 @@
         display: flex;
         flex-direction: row;
         .header__social--icon{
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: var(--color-claro);
             margin: 15px;
             &:hover{
@@ -56,7 +57,7 @@
         }
     }
     .header__links--logo{
-        display: none;
+        display: block;
     }
     &__logo{
         display: flex;
@@ -64,13 +65,14 @@
         cursor: pointer;
     }
 }
-@media (max-width: 968px){
+@media (max-width: 768px){
     .header{
+        height: 7rem;
         &__nav{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 10rem;
+            height: 7rem;
             z-index: 1;
             width: 100%;
             max-width: 1400px;
@@ -85,19 +87,18 @@
             width: 60%;
             position: absolute;
             right: 100%;
-            top: 0;
-            height: 90vh;
+            top: 7rem;
             opacity: 1;
-            transition: all 0.7s ease;
-            z-index: 100;
+            height: 50vh;
+            transition: all 300ms ease;
+            z-index: -1;
             &.active{
                 background-color: var(--color-claro);
                 right: 40%;
                 opacity: 1;
-                transition: all 0.7s ease;
+                height: 50vh;
+                transition: all 300ms ease;
                 z-index: 100;
-                height: 90vh;
-                font-size: 1.6rem;
             }
         }
         &__logo{
@@ -111,16 +112,17 @@
             text-align: center;
             width: 100%;
             color: #fff;
-            transition: all 0.5s ease;
             cursor: pointer;
         }
         &__social{
+            
             display: flex;
             flex-direction: row;
             .header__social--icon{
-                font-size: 1.5rem;
-                color: #fff;
+                font-size: 2rem;
+                color: var(--color-amarillo);
                 margin: 15px;
+                
                 &:hover{
                     color: var(--color-oscuro);
                 }
@@ -139,11 +141,13 @@
                 margin: 4px auto;
                 transition: all 0.3s;
                 background-color: #fff;
+                
             }
         }
         #mobile-menu{
+            cursor: pointer;
             position: absolute;
-            top: 30%;
+            top: 25%;
             right: 10%;
             transform: translate(-6%, 20%);
         }
