@@ -25,11 +25,6 @@ const sr = ScrollReveal({
     delay: 300
 });
 
-sr.reveal('.header__menu, .header__links, .header__social--icon', {
-    delay: 200,
-    origin: 'top',
-    interval: 500
-});
 sr.reveal('.hero__h1, .hero__h3, .hero__p, .hero__buttons', {
     delay: 2000,
     origin: 'left',
