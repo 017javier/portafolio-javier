@@ -47,6 +47,7 @@
     &__social{
         display: flex;
         flex-direction: row;
+        align-items: center;
         .header__social--icon{
             font-size: 2.5rem;
             color: var(--color-claro);
@@ -84,20 +85,20 @@
             align-items: center;
             justify-content: center;
             margin: 0;
-            width: 60%;
+            width: 70%;
             position: absolute;
             right: 100%;
-            top: 7rem;
+            top: 0;
             opacity: 1;
-            height: 50vh;
-            transition: all 300ms ease;
+            height: 70vh;
+            transition: .5s ease-out;
             z-index: -1;
             &.active{
                 background-color: var(--color-claro);
-                right: 40%;
+                right: 30%;
                 opacity: 1;
-                height: 50vh;
-                transition: all 300ms ease;
+                height: 70vh;
+                transition: .5s ease-out;
                 z-index: 100;
             }
         }
@@ -115,14 +116,13 @@
             cursor: pointer;
         }
         &__social{
-            
             display: flex;
             flex-direction: row;
+            justify-content: center;
             .header__social--icon{
                 font-size: 2rem;
                 color: var(--color-amarillo);
                 margin: 15px;
-                
                 &:hover{
                     color: var(--color-oscuro);
                 }
@@ -133,7 +133,6 @@
             padding-bottom: 40px;
             transition: all 0.5s ease;
         }
-            
         &__toggle{
             .line{
                 width: 25px;

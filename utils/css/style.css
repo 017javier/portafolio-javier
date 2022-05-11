@@ -193,6 +193,7 @@ iframe {
 .header__social {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .header__social .header__social--icon {
   font-size: 2.5rem;
@@ -231,21 +232,21 @@ iframe {
     align-items: center;
     justify-content: center;
     margin: 0;
-    width: 60%;
+    width: 70%;
     position: absolute;
     right: 100%;
-    top: 7rem;
+    top: 0;
     opacity: 1;
-    height: 50vh;
-    transition: all 300ms ease;
+    height: 70vh;
+    transition: 0.5s ease-out;
     z-index: -1;
   }
   .header__menu.active {
     background-color: var(--color-claro);
-    right: 40%;
+    right: 30%;
     opacity: 1;
-    height: 50vh;
-    transition: all 300ms ease;
+    height: 70vh;
+    transition: 0.5s ease-out;
     z-index: 100;
   }
   .header__logo {
@@ -263,6 +264,7 @@ iframe {
   .header__social {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .header__social .header__social--icon {
     font-size: 2rem;
