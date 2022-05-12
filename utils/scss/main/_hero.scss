@@ -39,15 +39,7 @@
             justify-content: center;
         }
     }
-    &__img{
-        width: 100%;
-    }
-    &__img-portada{
-        object-fit: cover;
-        bottom: 100px;
-        width: 100%;
-        z-index: -1;
-    }
+    
 }
 @media (max-width: 720px) {
     .hero{
