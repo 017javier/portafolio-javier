@@ -482,7 +482,8 @@ iframe {
   transition: all 400ms;
 }
 .portafolio__box:nth-child(1) {
-  background-image: url("../img/Portafolio__07.jpg");
+  background-image: url("../img/portafolio01.png");
+  background-color: var(--color-amarillo);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -506,13 +507,15 @@ iframe {
   background-position: center;
 }
 .portafolio__box:nth-child(5) {
-  background-image: url("../img/Portafolio__07.jpg");
+  background-image: url("../img/portafolio05.png");
+  background-color: var(--color-amarillo);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .portafolio__box:nth-child(6) {
-  background-image: url("../img/Portafolio__07.jpg");
+  background-image: url("../img/portafolio06.png");
+  background-color: var(--color-amarillo);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
