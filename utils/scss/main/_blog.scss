@@ -9,21 +9,20 @@
     }
     
     &__contenedor{
-        max-width: 1400px;
         display: flex;
-        gap: 3rem;
         justify-content: center;
+        gap: 3rem;
+        max-width: 1400px;
     }
     &__card{
         width: 45rem;
         height: max-content;
-        border: 1px solid var(--color-claro);
         background-color: #fff;
+        border: 1px solid var(--color-claro);
     }
     &__img{
         width: 100%;
         height: 60%;
-        
     }
     &__texto{
         margin: 1.5rem;

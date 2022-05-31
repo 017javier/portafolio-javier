@@ -5,16 +5,16 @@
         padding-bottom: 150px;
     }
     &__p{
-        text-align: center;
         padding-bottom: 2rem;
         margin: 2rem;
+        text-align: center;
     }
     &__contenedor{
-        max-width: 1400px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         justify-content: center;
         gap: 10px;
+        max-width: 1400px;
     }
     &__box{
         

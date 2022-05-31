@@ -24,8 +24,8 @@
             color: var(--color-oscuro);
         }
         .hero__h3{
-            font-size: 2.8rem;
             margin-bottom: 20px;
+            font-size: 2.8rem;
             text-align: center;
             color: var(--color-oscuro);
         }
@@ -34,9 +34,9 @@
             text-align: center;
         }
         .hero__buttons{
-            padding-top: 20px;
             display: flex;
             justify-content: center;
+            padding-top: 20px;
         }
     }
     
@@ -52,9 +52,9 @@
         &__texto{
             padding: 1.5rem;
             .hero__buttons{
-                padding-top: 20px;
                 display: flex;
                 justify-content: center;
+                padding-top: 20px;
             }
         }
     }
@@ -74,9 +74,9 @@
                 font-size: 2rem;
             }
             .hero__buttons{
-                padding-top: 10px;
                 display: flex;
                 justify-content: center;
+                padding-top: 10px;
             }
         }
     }
